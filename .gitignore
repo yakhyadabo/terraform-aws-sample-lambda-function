@@ -6,6 +6,7 @@
 !*.tf
 !*.tfvars
 !*.sh
+!*.py
 !README.adoc
 !Makefile
 !Dockerfile
