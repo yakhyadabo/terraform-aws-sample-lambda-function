@@ -35,3 +35,10 @@ resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_iam_role" {
   role        = aws_iam_role.lambda_role.name
   policy_arn  = aws_iam_policy.iam_policy_for_lambda.arn
 }
+
+// Attach a custom policy.
+// In order for the lambda to able to perform anything, it requires this permission.
+resource "aws_iam_role_policy_attachment" "assume_role" {
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  role       = aws_iam_role.lambda_role.name
+}
