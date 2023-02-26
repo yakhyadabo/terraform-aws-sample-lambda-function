@@ -8,6 +8,20 @@ variable "project_name" {
   description = "Name of the project"
 }
 
+variable "api_stage_name" {
+  description = "Stage name of the API"
+  default = "stage"
+}
+
+variable "subdomain" {
+  type = string
+  default = "api"
+}
+
+variable "root_domain" {
+  type = string
+}
+
 variable "environment" {
   type = string
   description = <<EOT
