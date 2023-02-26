@@ -12,3 +12,12 @@ variable "project" {
 
   description = "Project details"
 }
+
+variable "subdomain" {
+  type = string
+}
+
+variable "root_domain" {
+  type = string
+  default = "yakhyadabo.org"
+}

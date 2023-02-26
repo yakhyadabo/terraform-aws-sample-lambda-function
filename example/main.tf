@@ -11,4 +11,5 @@ module "lambda" {
   app_id               = local.app_id
   project_name         = var.project.name
   environment          = var.project.environment
+  root_domain          = var.root_domain
 }
